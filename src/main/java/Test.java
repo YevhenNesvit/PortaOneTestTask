@@ -6,13 +6,13 @@ public class Test {
         Solution solution = new Solution();
         Scanner in = new Scanner(System.in);
         System.out.print("Input a text: ");
-        String text = in.next();
-
-        char uniqueCharInOneWord = solution.getFirstUniqueCharInOneWord(text);
-        if (uniqueCharInOneWord == ' ') {
-            System.out.println("Either all characters are repeating or string is empty");
-        } else {
-            System.out.println("First non-repeating character is " + uniqueCharInOneWord);
+        StringBuilder text = new StringBuilder();
+        while (in.hasNextLine()) {
+            text.append(in.nextLine());
         }
+
+        char uniqueChar = solution.getFirstUniqueChar(text.toString());
+        System.out.println("First non-repeating character is " + uniqueChar);
+        in.close();
     }
 }
