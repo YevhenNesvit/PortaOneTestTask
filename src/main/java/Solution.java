@@ -14,7 +14,7 @@ public class Solution {
 
     public char getFirstUniqueChar(String text) {
         StringBuilder builder = new StringBuilder();
-        String[] list = text.split(" ");
+        String[] list = text.split("\\s+");
 
         for (String s : list) {
             builder.append(getFirstUniqueCharInOneWord(s));
