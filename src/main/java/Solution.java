@@ -19,7 +19,11 @@ public class Solution {
         for (String s : list) {
             builder.append(getFirstUniqueCharInOneWord(s));
         }
+        String result = String.valueOf(builder);
+        if (result.contains(" ")) {
+            result = result.replace(" ", "");
+        }
 
-        return getFirstUniqueCharInOneWord(String.valueOf(builder));
+        return getFirstUniqueCharInOneWord(result);
     }
 }

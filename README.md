@@ -6,4 +6,4 @@ Solution for it was taken in https://javahungry.blogspot.com/2013/12/first-non-r
 If there are more than one word in text input getFirstUniqueChar method split this phrase by space(s) into String array
 and concatenate the first unique chars of every word into one.
 
-To test it please run Test method, type or copy and paste some text into console and type Ctrl + D
+To test it please run Test method, type or copy and paste some text into console type Enter and after Ctrl + D
